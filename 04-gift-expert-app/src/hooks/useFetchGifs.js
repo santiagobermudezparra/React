@@ -9,18 +9,15 @@ export const useFetchGifs = (category) => {
     useEffect( () => {
         getGifs(category)
             .then(imgs =>{
-
-                setTimeout(() => {
                     setstate({
                         data: imgs,
                         loading: false
                     })
-                }, 1000);
                 
             })
 
 
-    },[category])
+    },[category])//para evitar que se autorecargue cuando cambie
     return state;
     
 }

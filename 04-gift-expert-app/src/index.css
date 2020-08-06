@@ -36,3 +36,7 @@ input {
 .card img {
   max-height: 170px;
 }
+
+.p-error{
+  color: red;
+}
